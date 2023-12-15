@@ -71,3 +71,12 @@ if (false)
 }
 
 #endregion
+
+#region LocalMethod
+
+if (true)
+{
+    var objectWithLocalMethods = new LocalMethod();
+    objectWithLocalMethods.Run();
+}
+#endregion
