@@ -1,5 +1,7 @@
 ﻿#region ClassWithDestructor
 
+using Sandbox.ConsoleApp.Errors;
+
 if (false)
 {
     for (int i = 0; i < 100; i++)
@@ -93,10 +95,35 @@ if (false)
 
 #region Extension method
 
-if (true)
+if (false)
 {
     double NewYork = 32;
     Console.WriteLine($"{NewYork.CalsiusToFahrenheit()}");
 }
+
+#endregion
+
+#region TryCatch
+
+if (true)
+{
+    try
+    {
+        var service = new OrderService();
+        //int id = service.GetLastOrderId();
+        service.SignOrder(1, "xyz12");
+    }
+    catch (OrderSignException exc)
+    {
+        // logger.Error()
+        Console.WriteLine($"Problems with signing {exc.OrderId} - {exc.SignErrorCode}");
+    }
+    catch (Exception exc)
+    {
+        // logger.Error()
+        Console.WriteLine("Other problems...");
+    }
+}
+
 
 #endregion
