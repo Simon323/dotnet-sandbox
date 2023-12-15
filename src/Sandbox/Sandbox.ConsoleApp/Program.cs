@@ -28,3 +28,16 @@
 //Console.WriteLine(a);
 
 #endregion
+
+#region IDisposable
+
+using Sandbox.ConsoleApp.Samples;
+
+if (true)
+{
+    using (var res = new ClassWithResources()) ;
+
+    Console.WriteLine("End");
+}
+
+#endregion
