@@ -74,9 +74,19 @@ if (false)
 
 #region LocalMethod
 
-if (true)
+if (false)
 {
     var objectWithLocalMethods = new LocalMethod();
     objectWithLocalMethods.Run();
 }
+#endregion
+
+#region Record
+
+if (false)
+{
+    var user = new UserRecord("John", "Doe", 32);
+    Console.WriteLine(user);
+}
+
 #endregion
