@@ -17,3 +17,14 @@
 //Calculator.Calculate(2, 3, Calculator.Add);
 
 #endregion
+
+#region Ref
+
+//using Sandbox.ConsoleApp.Samples;
+
+//int a = 32;
+
+//RefSample.Increase(ref a);
+//Console.WriteLine(a);
+
+#endregion
