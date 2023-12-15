@@ -90,3 +90,13 @@ if (false)
 }
 
 #endregion
+
+#region Extension method
+
+if (true)
+{
+    double NewYork = 32;
+    Console.WriteLine($"{NewYork.CalsiusToFahrenheit()}");
+}
+
+#endregion
