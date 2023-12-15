@@ -44,3 +44,13 @@ if (false)
 }
 
 #endregion
+
+#region Params
+
+if (false)
+{
+    ParamsSample.DisplayNames(new string[] { "adam", "roman", "ola" });
+    ParamsSample.DisplayNames("adam", "roman", "ola");
+}
+
+#endregion
