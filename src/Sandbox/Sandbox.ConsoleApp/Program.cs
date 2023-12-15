@@ -64,6 +64,10 @@ if (false)
 
     var (name, age) = ClassVsTuple.GetPersonaInfoAsTupel();
     Console.WriteLine($"{name}, {age}");
+
+    (string country, string surname, int age) tuple = ("Poland", "Doe", 32);
+    Console.WriteLine($"{tuple.country} {tuple.surname} {tuple.age}");
+
 }
 
 #endregion
