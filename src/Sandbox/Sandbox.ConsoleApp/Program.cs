@@ -1,39 +1,42 @@
 ﻿#region ClassWithDestructor
 
-//using Sandbox.ConsoleApp.Samples;
-
-//for (int i = 0; i < 100; i++)
-//{
-//    var obj = new ClassWithDestructor();
-//    GC.Collect();
-//    GC.WaitForPendingFinalizers();
-//}
+if (false)
+{
+    for (int i = 0; i < 100; i++)
+    {
+        var obj = new ClassWithDestructor();
+        GC.Collect();
+        GC.WaitForPendingFinalizers();
+    }
+}
 
 #endregion
 
 #region Calculator
 
-
-//Calculator.Calculate(2, 3, Calculator.Add);
+if (false)
+{
+    Calculator.Calculate(2, 3, Calculator.Add);
+}
 
 #endregion
 
 #region Ref
 
-//using Sandbox.ConsoleApp.Samples;
+if (false)
+{
+    int a = 32;
 
-//int a = 32;
-
-//RefSample.Increase(ref a);
-//Console.WriteLine(a);
+    RefSample.Increase(ref a);
+    Console.WriteLine(a);
+}
 
 #endregion
 
 #region IDisposable
 
-using Sandbox.ConsoleApp.Samples;
 
-if (true)
+if (false)
 {
     using (var res = new ClassWithResources()) ;
 
