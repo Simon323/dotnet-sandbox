@@ -5,7 +5,11 @@ VisualStudioVersion = 17.7.34302.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nbomber", "Nbomber", "{C0D4CA62-B191-4F11-8B5C-63BE1C969FBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBomber.Api", "src\NBomber\NBomber.Api\NBomber.Api.csproj", "{20033085-87D7-4F3C-B497-256ED29B3E90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NBomber.Api", "src\NBomber\NBomber.Api\NBomber.Api.csproj", "{20033085-87D7-4F3C-B497-256ED29B3E90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sandbox", "Sandbox", "{30BAB6F7-D523-4CE8-BA43-204D448DE484}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.ConsoleApp", "src\Sandbox\Sandbox.ConsoleApp\Sandbox.ConsoleApp.csproj", "{D906B55B-194F-49A5-B86C-7A31271E5CCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +21,17 @@ Global
 		{20033085-87D7-4F3C-B497-256ED29B3E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20033085-87D7-4F3C-B497-256ED29B3E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20033085-87D7-4F3C-B497-256ED29B3E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D906B55B-194F-49A5-B86C-7A31271E5CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D906B55B-194F-49A5-B86C-7A31271E5CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D906B55B-194F-49A5-B86C-7A31271E5CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D906B55B-194F-49A5-B86C-7A31271E5CCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{20033085-87D7-4F3C-B497-256ED29B3E90} = {C0D4CA62-B191-4F11-8B5C-63BE1C969FBE}
+		{D906B55B-194F-49A5-B86C-7A31271E5CCB} = {30BAB6F7-D523-4CE8-BA43-204D448DE484}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7C1B3764-2D4C-42CE-A71C-03A641D4ACC5}
