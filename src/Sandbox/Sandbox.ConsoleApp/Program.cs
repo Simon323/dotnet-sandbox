@@ -54,3 +54,16 @@ if (false)
 }
 
 #endregion
+
+#region ClassVsTuple
+
+if (false)
+{
+    var personalInfo = ClassVsTuple.GetPersonalInfo();
+    Console.WriteLine($"{personalInfo.Name}, {personalInfo.Age}");
+
+    var (name, age) = ClassVsTuple.GetPersonaInfoAsTupel();
+    Console.WriteLine($"{name}, {age}");
+}
+
+#endregion
