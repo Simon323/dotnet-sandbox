@@ -1,5 +1,6 @@
 ﻿#region ClassWithDestructor
 
+using NLog;
 using Sandbox.ConsoleApp.Errors;
 
 if (false)
@@ -107,23 +108,34 @@ if (false)
 
 if (true)
 {
+    var logger = LogManager.GetCurrentClassLogger();
     try
     {
         var service = new OrderService();
-        //int id = service.GetLastOrderId();
+        int id = service.GetLastOrderId();
         service.SignOrder(1, "xyz12");
     }
     catch (OrderSignException exc)
     {
-        // logger.Error()
+        logger.Error(exc);
         Console.WriteLine($"Problems with signing {exc.OrderId} - {exc.SignErrorCode}");
     }
     catch (Exception exc)
     {
-        // logger.Error()
+        logger.Error(exc);
         Console.WriteLine("Other problems...");
     }
 }
 
+
+#endregion
+
+#region Logger
+
+if (false)
+{
+    var logger = LogManager.GetCurrentClassLogger();
+    logger.Info("Log test!!!");
+}
 
 #endregion
